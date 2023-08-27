@@ -1,0 +1,112 @@
+// Problem 1: Create a function to check if a number is Prime or Not
+
+function checkPrime(num){
+  let count =0;
+
+  for(let i=1;i<=num;i++){
+    if(num%i==0){
+      count++
+    }
+  }
+  if(count == 2){
+    console.log(num, "is prime");
+  }
+  else{
+    console.log(num, "Not Prime")
+  }
+}
+
+checkPrime(5)
+
+
+
+// Problem 2: Use the above function to print the Primes from 2 to a given limit
+
+
+function printPrime(num){
+  for(let i=2;i<=num;i++){
+     let count = 0;
+    for(let j=1;j<=i;j++){
+      if(i%j==0){
+        count++
+      }
+    }
+    if(count==2){
+      console.log(i, "is prime");
+    }
+  }
+}
+
+printPrime(20)
+
+
+
+
+// Problem 3: Use the same function to print Non-Primes from 2 to a given limit
+
+function printPrime(num){
+  for(let i=2;i<=num;i++){
+     let count = 0;
+    for(let j=1;j<=i;j++){
+      if(i%j==0){
+        count++
+      }
+    }
+    if(count!=2){
+      console.log(i, "is Not prime");
+    }
+  }
+}
+
+printPrime(20)
+
+
+
+
+//  Problem 4
+// Problem 4: Write a function to check if the char is a small case or not.
+
+
+function checkChar(char){
+  let str = "abcdefghijklmnopqrstuvwxyz"
+  let flage = false;
+  for(let i=0;i<str.length;i++){
+    if(char==str[i]){
+      flage = true;
+        break;
+    }
+   }
+    if(flage == true){
+      console.log("Lower Case");
+    }
+      else{
+      console.log("Upper Case");
+    }
+}
+
+checkChar("M")
+
+
+
+
+
+// Problem 5: Write a function to replace spaces in a given string with - .
+
+function replaceSpace(str){
+  let bag = "";
+
+  for(let i=0;i<str.length;i++){
+    if(str[i]==" "){
+      bag+="-";
+    }
+    else{
+      bag+=str[i];
+    }
+  }
+  return bag
+}
+
+let result = replaceSpace("Masai School A Transformation of Tech");
+
+console.log(result)
+
