@@ -1,0 +1,89 @@
+// Problem 1: Given the year of birth, if the age is between 13 and 19 (both included) print Teenage and in between 20 and 29 (both included) print Twenties
+
+let birthYear = 1998;
+
+let age = 2023 - birthYear;
+
+if(age >= 13 && age <= 19){
+  console.log("Teenage");
+}
+else if(age >= 20 && age <= 29){
+  console.log("Twenties");
+}
+
+
+
+
+// Problem 2 : Given any character, if it is a vowel print "Vowel"
+
+let char = "b"
+
+if(char == "a" || char == "e" || char == "i" || char == "0" || char == "u")
+{
+  console.log("vowel")
+}
+else{
+  console.log("NA")
+}
+
+
+
+// Problem 3 : Given and character if it is a consonant print "Consonant"
+
+
+let consonant = "bcdfghjklmnpqrstvwxyz"
+let char= "a"
+
+for(let i=0;i<consonant.length;i++){
+  if(char===consonant[i]){
+    console.log("Consonant")
+    // break;
+  }
+  else{
+    console.log("NA")
+  }
+  break;
+}
+
+
+
+
+
+// Problem 4: Given 3 numbers (all different values), print which is greatest
+
+let num1 = 15;
+let num2 = 14;
+let num3 = 26;
+
+if(num1 > num2 && num1 > num3){
+  console.log("num1 is greatest");
+}
+else if(num2 > num1 && num2 > num3){
+  console.log("num2 is greatest");
+}
+else{
+  console.log("num3 is greatest");
+}
+
+
+
+
+
+//Problem 5: Given the days of the week in short format "Sun", "Mon" ... print in long format "Sunday", "Monday", ...
+let day="Sun"
+
+  switch(day){
+  case "Sun": console.log("Sunday");
+    break;
+  case "Mon": console.log("Monday");
+    break;
+  case "Tue": console.log("Tuesday");
+    break;
+  case "Wed": console.log("Wednesday");
+    break;
+  case "Thur": console.log("Thursday");
+    break;
+  case "Fri": console.log("Friday");
+    break;
+  case "Sat": console.log("Saturday")
+  }
